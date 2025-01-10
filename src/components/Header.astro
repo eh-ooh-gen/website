@@ -5,8 +5,8 @@ import { SITE_TITLE } from "../consts";
 
 <header>
   <nav>
-    <h2><a href="/">{SITE_TITLE}</a></h2>
-    <div class="internal-links">
+    <h2 class="type-h3"><a href="/">{SITE_TITLE}</a></h2>
+    <div class="links">
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/blog">Blog</HeaderLink>
       <HeaderLink href="/about">About</HeaderLink>
@@ -14,29 +14,22 @@ import { SITE_TITLE } from "../consts";
   </nav>
 </header>
 <style>
-  header {
-    margin: 0;
-    padding: 1rem;
-  }
-
-  h2 a,
-  h2 a.active {
-    font-weight: 600;
-    text-decoration: none;
-  }
   nav {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
+    padding: 24px 16px;
+
+    @media (min-width: 480px) {
+      padding: 24px;
+    }
   }
-  nav a {
-    padding: 1em 0.5em;
-    color: var(--black);
-    border-bottom: 4px solid transparent;
-    text-decoration: none;
-  }
-  nav a.active {
-    text-decoration: none;
-    border-bottom-color: var(--accent);
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
   }
 </style>
