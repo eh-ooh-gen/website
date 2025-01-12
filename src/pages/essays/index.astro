@@ -1,0 +1,40 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import TitleSection from "../../components/TitleSection.astro";
+import HomeEssay from "../../components/HomeEssay.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import { getCollection } from "astro:content";
+
+const essays = (await getCollection("essays")).sort(
+  (a, b) => b.data.id.valueOf() - a.data.id.valueOf(),
+);
+---
+
+<Layout title="Home" description={SITE_DESCRIPTION}>
+  <TitleSection title="Essays">
+    This is a full archive of essays I've written. I try to release a new one
+    every month or two. The word essay is doing a lot of work here.
+  </TitleSection>
+  <section class="essays pad-content">
+    {
+      essays.map((essay) => (
+        <HomeEssay
+          id={essay.data.id}
+          when={essay.data.when}
+          title={essay.data.title}
+        >
+          {essay.data.description}
+        </HomeEssay>
+      ))
+    }
+  </section>
+</Layout>
+
+<style>
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+  }
+</style>

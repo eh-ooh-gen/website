@@ -1,11 +1,11 @@
 ---
-let { title, id, released, url } = Astro.props;
+let { title, id, when, url } = Astro.props;
 ---
 
 <div class="essay">
   <div class="name-and-details">
     <h3><a href={url}>{title}</a></h3>
-    <div class="details type-mono">Essay {id} • {released}</div>
+    <div class="details type-mono">Essay {id} • {when}</div>
   </div>
   <p>
     <slot />
