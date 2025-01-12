@@ -1,6 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import TitleSection from "../components/TitleSection.astro";
+import HomeSection from "../components/HomeSection.astro";
+import HomeProject from "../components/HomeProject.astro";
+import HomeEssay from "../components/HomeEssay.astro";
 
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
@@ -11,4 +14,22 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     the little projects I’m working on. Mainly it serves as a way to push myself
     and learn in public.
   </TitleSection>
+
+  <HomeSection title="Projects">
+    <HomeProject name="Lulox" duration="2024-2025">
+      A programming language interpreter written in Lua, based on the book
+      <a href="https://craftinginterpreters.com">Crafting Interpreters</a>
+      by Bob Nystrom.
+    </HomeProject>
+  </HomeSection>
+  <HomeSection title="Essays">
+    <HomeEssay
+      id="001"
+      released="Jan 2025"
+      title="Book report: Crafting Interpreters Parts 1 & 2"
+    >
+      What it’s like to work on an interpreter after 15+ years of putting forms
+      on websites.
+    </HomeEssay>
+  </HomeSection>
 </Layout>

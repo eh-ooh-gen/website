@@ -60,3 +60,7 @@ h5,
 h6 {
   text-wrap: balance;
 }
+
+a:hover {
+  cursor: pointer;
+}

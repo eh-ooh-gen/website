@@ -42,7 +42,8 @@ a.active {
 }
 
 pre,
-code {
+code,
+.type-mono {
   font-family: "Lab Grotesque Mono TRIAL", sans-serif;
 }
 
@@ -54,6 +55,7 @@ ul,
   line-height: calc(24 / 16 * 1rem);
   margin-top: -0.2967em;
   margin-bottom: -0.3267em;
+  padding-block: 4px;
 }
 
 h1,
@@ -62,15 +64,25 @@ h1,
   line-height: calc(30 / 16 * 1rem);
   margin-top: -0.1657em;
   margin-bottom: -0.1957em;
-  padding-block: 4px;
+  font-weight: 700;
 }
 
-.type-h3 {
-  font-size: calc(18 / 16 * 1rem);
-  line-height: calc(24 / 16 * 1rem);
+h2,
+.type-h2 {
+  font-size: calc(21 / 16 * 1rem);
+  line-height: calc(28 / 16 * 1rem);
   margin-top: -0.2967em;
   margin-bottom: -0.3267em;
-  padding-block: 4px;
+  font-weight: 700;
+}
+
+h3,
+.type-h3 {
+  font-size: calc(18 / 16 * 1rem);
+  line-height: calc(21 / 16 * 1rem);
+  margin-top: -0.2967em;
+  margin-bottom: -0.3267em;
+  font-weight: 700;
 }
 
 .pad-content {
@@ -79,4 +91,11 @@ h1,
   @media (min-width: 480px) {
     padding-inline: 24px;
   }
+}
+
+p a,
+ul a,
+ol a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
