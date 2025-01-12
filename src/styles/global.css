@@ -56,10 +56,27 @@ ul,
   margin-bottom: -0.3267em;
 }
 
+h1,
+.type-h1 {
+  font-size: calc(28 / 16 * 1rem);
+  line-height: calc(30 / 16 * 1rem);
+  margin-top: -0.1657em;
+  margin-bottom: -0.1957em;
+  padding-block: 4px;
+}
+
 .type-h3 {
   font-size: calc(18 / 16 * 1rem);
   line-height: calc(24 / 16 * 1rem);
-  font-weight: 700;
   margin-top: -0.2967em;
   margin-bottom: -0.3267em;
+  padding-block: 4px;
+}
+
+.pad-content {
+  padding-inline: 16px;
+
+  @media (min-width: 480px) {
+    padding-inline: 24px;
+  }
 }

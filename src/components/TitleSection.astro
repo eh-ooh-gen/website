@@ -1,0 +1,26 @@
+---
+let { title } = Astro.props;
+---
+
+<section>
+  <h1 class="pad-content">{title}</h1>
+  <p class="pad-content">
+    <slot />
+  </p>
+</section>
+
+<style>
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  p {
+    font-size: calc(21 / 16 * 1rem);
+    line-height: calc(28 / 16 * 1rem);
+    margin-top:  margin-bottom: -0.2967em;
+    margin-bottom: margin-top: -0.3267em;
+    padding-block: 4px;
+    font-weight: 400;
+  }
+</style>
