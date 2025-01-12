@@ -32,6 +32,7 @@ const essays = (await getCollection("essays"))
       essays.map((essay) => (
         <HomeEssay
           id={essay.data.id}
+          url={`/essays/${essay.id}`}
           when={essay.data.when}
           title={essay.data.title}
         >

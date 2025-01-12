@@ -1,0 +1,38 @@
+---
+
+---
+
+<div class="content">
+  <slot />
+</div>
+
+<style>
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .content > :global(*) {
+    padding-inline: 16px;
+    padding-block: 4px;
+
+    @media (min-width: 480px) {
+      padding-inline: 24px;
+    }
+  }
+
+  .content > :global(pre) {
+    background-color: oklch(90% 0.005 210);
+    padding-block: 20px;
+    margin-top: 8px;
+  }
+
+  .content > :global(h2:not(:first-child)) {
+    margin-top: 24px;
+  }
+
+  .content > :global(h3:not(:first-child)) {
+    margin-top: 4px;
+  }
+</style>

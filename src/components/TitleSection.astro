@@ -1,9 +1,18 @@
 ---
-let { title } = Astro.props;
+let { title, id, when } = Astro.props;
 ---
 
 <section>
-  <h1 class="pad-content">{title}</h1>
+  <div class="title-and-description">
+    <h1 class="pad-content">{title}</h1>
+    {
+      id && when && (
+        <div class="description type-mono type-pre pad-content">
+          Essay {id} • {when}
+        </div>
+      )
+    }
+  </div>
   <p class="pad-content">
     <slot />
   </p>
@@ -15,6 +24,14 @@ let { title } = Astro.props;
     flex-direction: column;
     gap: 16px;
   }
+  .title-and-description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    padding-block: 4px;
+  }
+
   p {
     font-size: calc(21 / 16 * 1rem);
     line-height: calc(28 / 16 * 1rem);

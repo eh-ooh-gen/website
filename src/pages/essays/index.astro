@@ -8,6 +8,7 @@ import { getCollection } from "astro:content";
 const essays = (await getCollection("essays")).sort(
   (a, b) => b.data.id.valueOf() - a.data.id.valueOf(),
 );
+console.log(essays[0]);
 ---
 
 <Layout title="Home" description={SITE_DESCRIPTION}>
@@ -20,6 +21,7 @@ const essays = (await getCollection("essays")).sort(
       essays.map((essay) => (
         <HomeEssay
           id={essay.data.id}
+          url={`/essays/${essay.id}`}
           when={essay.data.when}
           title={essay.data.title}
         >

@@ -1,8 +1,3 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
 @import "reset.css";
 
 :root {
@@ -50,6 +45,7 @@ code,
 /* This is the default style that applies to most things */
 p,
 ul,
+ol,
 .type-default {
   font-size: calc(18 / 16 * 1rem);
   line-height: calc(24 / 16 * 1rem);
@@ -98,4 +94,13 @@ ul a,
 ol a {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+pre,
+code,
+.type-pre {
+  font-size: calc(18 / 16 * 1rem);
+  line-height: calc(21 / 16 * 1rem);
+  margin-top: -0.2813em;
+  margin-bottom: -0.2433em;
 }
