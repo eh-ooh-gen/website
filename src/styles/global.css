@@ -9,6 +9,8 @@
   --color-bg: oklch(95% 0.005 210);
   --color-fg: oklch(36% 0.06 210);
   --color-active: oklch(48% 0.1 210);
+  --color-lighter: oklch(42% 0.06 210);
+  --color-lightest: oklch(48% 0.06 210);
 }
 
 body {
