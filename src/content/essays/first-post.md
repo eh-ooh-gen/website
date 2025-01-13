@@ -1,7 +1,7 @@
 ---
 id: "001"
 title: 'First post'
-description: 'Lorem ipsum dolor sit amet'
+description: 'What we read online, the tools we use, the way we approach problems, everything carries with it the assumption of bigness.'
 when: 'Jul 2022'
 ---
 

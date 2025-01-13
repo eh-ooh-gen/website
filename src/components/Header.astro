@@ -5,7 +5,9 @@ import { SITE_TITLE } from "../consts";
 
 <header>
   <nav>
-    <h2 class="type-h3"><a href="/">{SITE_TITLE}</a></h2>
+    <h2 class="type-h3">
+      <HeaderLink href="/">{SITE_TITLE}</HeaderLink>
+    </h2>
     <div class="links">
       <HeaderLink href="/essays">Essays</HeaderLink>
       <HeaderLink href="/about">About</HeaderLink>
@@ -30,5 +32,6 @@ import { SITE_TITLE } from "../consts";
     display: flex;
     flex-direction: row;
     gap: 16px;
+    font-weight: 500;
   }
 </style>

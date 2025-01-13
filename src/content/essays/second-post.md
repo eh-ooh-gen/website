@@ -1,7 +1,7 @@
 ---
 id: "002"
 title: 'Second post'
-description: 'Lorem ipsum dolor sit amet'
+description: 'I’ll be going over some computing fundamentals, filling in some gaps in my own knowledge. I hope I can approach these lessons with a fresh pair of eyes.'
 when: 'Aug 2022'
 ---
 

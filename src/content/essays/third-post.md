@@ -1,7 +1,7 @@
 ---
 id: "003"
 title: 'Third post'
-description: 'Lorem ipsum dolor sit amet'
+description: How can making software become more affordable? How can we make software adaptable,? And how can we make sure software really belongs to its users?
 when: 'Sep 2022'
 ---
 
